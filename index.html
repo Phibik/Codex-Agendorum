@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi PWA Sencilla</title>
   <link rel="manifest" href="manifest.json">
-  <title>Mi Gran App</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenido a Mi Gran App</h1>
-  <p>Esta es una PWA que puede instalarse en tu dispositivo.</p>
+  <h1>¡Bienvenido a Mi PWA Sencilla!</h1>
+  <p>Haz clic en el botón para guardar un archivo.</p>
   <button onclick="guardarArchivo()">Guardar archivo</button>
 
   <script src="app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        console.log('Service Worker registrado con éxito:', registration);
-      }).catch(function(error) {
-        console.log('Error al registrar el Service Worker:', error);
-      });
-    }
-  </script>
 </body>
 </html>
